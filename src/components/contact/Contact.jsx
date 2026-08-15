@@ -13,21 +13,24 @@ const Contact = () => {
     setMessage(true);
     emailjs
       .sendForm(
-        'service_k2qawqh',
-        'template_c6rkpn6',
-        formRef.current,
-        'X7K7ebhIeOy3YwHki'
+          'service_4zyc4vo',
+          'template_d1j13gc',
+          formRef.current,
+          'lalXg4HpM8vkwCrMY'
+   
       )
       .then(
         (result) => {
           console.log(result.text);
+           e.target.reset();
+            setMessage(true);
         },
         (error) => {
-          console.log(error.text);
+          console.log("Email failed:",  error.text);
         }
       );
 
-    e.target.reset();
+ 
   };
   return (
     <section id="contact">

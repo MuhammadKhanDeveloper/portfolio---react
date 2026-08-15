@@ -1,6 +1,6 @@
 header {
   height: 100%;
-  padding-top: 7rem;
+  padding-top: 5rem;
   overflow: hidden;
 }
 
@@ -8,6 +8,8 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
+ 
+ 
 }
 
 .cta {
@@ -34,32 +36,69 @@ header {
   background: var(--color-primary);
 }
 
+
+
 .scroll__down {
   position: absolute;
   right: 5rem;
-  bottom: 5rem;
+  bottom: 4rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+ 
 }
 
 @media screen and (max-width: 1024px){
   header {
-    height: 68vh;
+    /* height: 68vh; */
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    
+
   }
 
   section {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
+
+.header__socials {
+
+  bottom: 4rem;
+   
+}
+
+.scroll__down {
+  
+
+  bottom: 7rem;
+  right: 4rem;
+
+}
+
 }
 
 @media screen and (max-width: 600px){
-  header {
-    height: 100vh;
+ 
+  #home{
+    padding-top: 2rem;
+  }
+
+   section {
+    margin-top: 2rem;
+   
   }
 
   .header__socials,
   .scroll__down {
     display: none;
   }
+}
+@media screen and (max-width: 465px){
+  header{
+
+    width: 100;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  
 }

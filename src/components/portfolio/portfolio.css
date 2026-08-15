@@ -30,13 +30,16 @@
 .portfolio__item p {
     margin: 0 0 1.2rem 0;
     font-size: 0.9rem;
+    
+      font-family: "Montserrat", sans-serif;
 }
 
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
     margin-bottom: 4rem; 
-    padding-top: 1.5rem;
+    padding-top: 2rem;
+    /* background-color: red; */
 }
 
 .portfolio__item-content {

@@ -6,7 +6,7 @@
 
 .experience__container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 2.4rem 3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -24,6 +24,11 @@
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-primary);
+     
+}
+.experience__container > div h4{
+     font-family: "Montserrat", sans-serif;
+     
 }
 
 .experience__content {
@@ -45,26 +50,105 @@
 @media screen and (max-width: 1024px){
     .experience__container {
         grid-template-columns: 1fr;
+     
     }
 
     .experience__container > div {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        padding: 2rem;
+       
+             padding: 1.5rem 0rem 2rem 1.5rem;
     }
 
     .experience__content p {
         padding: 1rem;
+        
     }
 }
   
 @media screen and (max-width: 600px){
     .experience__container {
-        gap: 1rem;
+        gap: 1rem;      
     }
 
     .experience__container > div {
-        width: 100%;
-        padding: 2rem 1rem;
+        width: 90%;
+          padding: 1.5rem 0rem 2rem 1.5rem;
+        
+    }  
+}
+
+@media screen and (max-width: 550px){
+    .experience__container {
+        gap: 1rem;      
     }
+    .experience__container > div {
+        width: 100%;
+          padding: 1rem 0rem 1.5rem 1rem;
+         
+    }  
+}
+
+
+@media screen and (max-width: 504px){
+   
+    .experience__container > div {
+      
+            font-size: small;
+    }  
+}
+
+
+
+
+@media screen and (max-width: 440px){
+   
+    .experience__container > div {
+        font-family: "Montserrat", sans-serif;
+            font-size: small;
+    }  
+}
+
+
+@media screen and (max-width: 430px){
+   
+    .experience__container > div {
+      
+            font-size: small;
+    }  
+}
+
+
+
+@media screen and (max-width: 414px){
+    .experience__container {
+        gap: 1rem;         
+    }
+    .experience__container > div {
+        width: 100%;
+          padding: 2rem 0rem 2.5rem 0.1rem;
+            font-size: small;
+    }  
+}
+
+@media screen and (max-width: 390px){
+   
+    .experience__container > div {
+        width: 100%;
+         padding: 2rem 0rem 2rem 0.5rem;
+            font-size:x-small;
+        
+    }  
+}
+
+
+
+@media screen and (max-width: 360px){
+   
+    .experience__container > div {
+        width: 100%;
+         padding: 2rem 0rem 2rem 0.5rem;
+            font-size:x-small;
+        
+    }  
 }

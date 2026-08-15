@@ -1,14 +1,15 @@
 import "./intro.css";
-
+import React, { useState } from "react";
 import { FaAward } from "react-icons/fa";
-import React from "react";
+// import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
 import img from '../../assets/Hero.jpg'
 
-// import ME from '../../assets/Rasif Tagizade image.jpg';
+
 
 
 const Intro = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <section id="about">
       <h5>Get to know</h5>
@@ -32,7 +33,7 @@ const Intro = () => {
               <small>10+ Completed Projects</small>
             </article>
           </div>
-          <p>
+          {/* <p >
             1+ years experienced Front End Developer with hands-on experience in
             identifying web-based user interactions along with designing and
             implementing highly-responsive user interface components by
@@ -41,7 +42,54 @@ const Intro = () => {
             code via JavaScript and React JS workflows. Adept at monitoring and
             maintaining frontend performance and troubleshooting and debugging
             the same to bolster overall performance.
-          </p>
+          </p> */}
+
+          {/* chat  */}
+<p className="about__text">
+  {showMore ? (
+    <>
+      1+ years experienced Front End Developer with hands-on experience in
+      identifying web-based user interactions along with designing and
+      implementing highly-responsive user interface components by deploying
+      React concepts. Proficient in translating designs and wireframes into
+      high-quality code, and writing application interface code via JavaScript
+      and React JS workflows. Adept at monitoring and maintaining frontend
+      performance and troubleshooting and debugging the same to bolster overall
+      performance.
+
+      <button
+        className="read-more"
+        onClick={() => setShowMore(false)}
+      >
+        Read Less
+      </button>
+    </>
+  ) : (
+    <>
+      1+ years experienced Front End Developer with hands-on experience in
+      identifying web-based user interactions along with designing and
+      implementing highly-responsive user interface components...
+
+      <button
+        className="read-more"
+        onClick={() => setShowMore(true)}
+      >
+        Read More
+      </button>
+    </>
+  )}
+</p>
+
+
+
+          {/* end  */}
+
+
+
+
+
+
+
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
