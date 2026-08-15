@@ -228,7 +228,7 @@
 @media screen and (max-width:390px) {
  .about__me {
        
-        width: 70%;
+        /* width: 70%; */
         margin: 0 auto;
     }
  
